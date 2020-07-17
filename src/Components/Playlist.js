@@ -6,6 +6,7 @@ function Playlist(props) {
     const {height} = props;
     return(
             <>
+                {/* <div className="background_playlist" style={{height: height}}> */}
                 <div className="background_playlist" style={{height: height}}>
                    <div className="container-fluid">
                        <div className="row">
