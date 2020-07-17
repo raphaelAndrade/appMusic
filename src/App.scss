@@ -1,9 +1,9 @@
 body {
   background: black !important;
-  .container-fluid {
-    padding-right: 3px !important;
-    padding-left: 3px !important;
-  }
+  // .container-fluid {
+  //   padding-right: 3px !important;
+  //   padding-left: 3px !important;
+  // }
  .paddingLeft16px {padding-left: 16px !important}
  
 }
@@ -39,7 +39,7 @@ body {
 .nameUser {
   font-weight: bold;
   margin-top: 7px;
-  display: inline-block;
+  display: block;
 }
 
 .badgeAccount {
@@ -84,13 +84,6 @@ h5 {
         top: -5px;
       }
     }
-    .more {
-      position: absolute;
-      right: -64px;
-      top: -14px;
-      font-size: 35px;
-      color: #38b0ba;
-    }
   }
 }
 .albumMusic {
@@ -128,8 +121,9 @@ h5 {
   li {
     h1 {
       color: white;
-      position: relative;
-      top: -190px;
+      text-align: left;
+
+      font-size:2vw
     }
     &:first-child{
       margin-right: 30px;
@@ -137,8 +131,6 @@ h5 {
     span {
       color: rgba($color: #ffff, $alpha: 0.7);
       font-size: 25px;
-      position: absolute;
-      top: 116px;
     }
   }
 }

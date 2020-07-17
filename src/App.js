@@ -9,9 +9,6 @@ import RecommendedAlbums from './Components/RecommendedAlbums';
 import Player from './Components/Player';
 import RecentlyListened from './Components/RecentlyListened';
 
-
-
-
   class App extends React.Component {
 
     state = {
@@ -66,4 +63,4 @@ import RecentlyListened from './Components/RecentlyListened';
     }
   }
 
-export default App
+export default App;

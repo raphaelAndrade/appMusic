@@ -3,8 +3,8 @@ import React from 'react';
 function RecommendedAlbums() {
     return(
         <>
-            <div className="container-fluid paddingLeft16px">
-                <div className="row noPadding">
+            <div className="container-fluid">
+                <div className="row">
                     <div className="col-10 ">
                         <h2>Recommended Albums</h2>
                     </div>
@@ -37,10 +37,10 @@ function RecommendedAlbums() {
                         <img src="https://i.pinimg.com/originals/d2/29/8d/d2298d3eaadd15d3800bbd14f605e5a9.jpg" alt="Picture of Profile" className="img-fluid"/>
                         <span>Alone - <label>Alan Walker</label></span>
                     </li>
-                    <li className="list-inline-item">
+                    {/* <li className="list-inline-item">
                         <img src="https://i.pinimg.com/originals/d2/29/8d/d2298d3eaadd15d3800bbd14f605e5a9.jpg" alt="Picture of Profile" className="img-fluid"/>
                         <span>Alone - <label>Alan Walker</label></span>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </>
