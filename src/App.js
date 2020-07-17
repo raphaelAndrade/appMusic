@@ -31,21 +31,20 @@ import RecentlyListened from './Components/RecentlyListened';
       const {height} = this.state;
       return (
         <> 
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-2">
-                <Playlist height={height} />
-              </div>
-              <div className="col-10">
-                <div className="container-fluid">
-                  <div className="row">
-                    <div className="col-9">
-                      <CurrentArtist />
-                      <FeatureForYou />
-                    </div>
-                    <div className="col-3">
-                      <RecentlyListened />
-                    </div>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-2">
+              <Playlist height={height} />
+            </div>
+            <div className="col-10">
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-9">
+                    <CurrentArtist />
+                    <FeatureForYou />
+                  </div>
+                  <div className="col-3">
+                    <RecentlyListened />
                   </div>
                 </div>
                 <div className="row">
@@ -53,10 +52,15 @@ import RecentlyListened from './Components/RecentlyListened';
                     <RecommendedAlbums />
                   </div>
                 </div>
+                <div className="row">
+                  <div className="col-12">
+                    <Player />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <Player />
+        </div>      
         </>
       );
     }
