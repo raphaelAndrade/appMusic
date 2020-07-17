@@ -234,7 +234,7 @@ h2 {
 }
 
 .bg-timeline {
-  width: 700px;
+  width: 80%;
   height: 6px;
   border-radius: 10px;
   background: #555368;
@@ -242,8 +242,9 @@ h2 {
   -webkit-box-shadow: inset 0px 2px 38px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 0px 2px 38px 0px rgba(0,0,0,0.75);
   box-shadow: inset 0px 2px 38px 0px rgba(0,0,0,0.75);
+  margin-top: 15px;
   span {
-    width: 500px;
+    width: 60%;
     height: 6px;
     background: #38b0ba;
     display: inline-block;
