@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.scss';
 import './Components/Playlist';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,29 +9,14 @@ import RecommendedAlbums from './Components/RecommendedAlbums';
 import Player from './Components/Player';
 import RecentlyListened from './Components/RecentlyListened';
 
-  class App extends React.Component {
 
-    state = {
-      height: null
-    }
-
-
-    componentDidMount() { //TODO: Create a callback function
-      let heightScreen = window.innerHeight;
-      this.setState({
-        height: heightScreen
-      })
-    }
-
-    
-    render() {
-      const {height} = this.state;
-      return (
-        <> 
+  function App() {
+    return(
+      <>
         <div className="container-fluid">
           <div className="row">
             <div className="col-2">
-              <Playlist height={height} />
+              <Playlist height={"height"} />
             </div>
             <div className="col-10">
               <div className="container-fluid">
@@ -49,18 +34,26 @@ import RecentlyListened from './Components/RecentlyListened';
                     <RecommendedAlbums />
                   </div>
                 </div>
-                <div className="row">
-                  <div className="col-12">
-                    <Player />
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-        </div>      
-        </>
-      );
-    }
+          <div className="row">
+            <div className="col-12">
+              <footer>
+                <div className="container-fluid">
+                  <div className="row">
+                    <div className="col-2">asdfasdf</div>
+                    <div className="col-10">
+                      <Player /> 
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div> 
+      </>
+    )
   }
 
-export default App;
+  export default App;

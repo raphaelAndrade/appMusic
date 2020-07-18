@@ -15,7 +15,6 @@ return(
             <div className="description">
                <span>Photograph</span>
                <label>Boyce Avenue</label>
-               {/* <span className="more">...</span> */}
             </div>
          </li>
       </ul>
@@ -31,7 +30,6 @@ return(
             <div className="description">
                <span>Photograph</span>
                <label>Boyce Avenue</label>
-               {/* <span className="more">...</span> */}
             </div>
          </li>
       </ul>
@@ -47,7 +45,6 @@ return(
             <div className="description">
                <span>Photograph</span>
                <label>Boyce Avenue</label>
-               {/* <span className="more">...</span> */}
             </div>
          </li>
       </ul>
@@ -63,7 +60,6 @@ return(
             <div className="description">
                <span>Photograph</span>
                <label>Boyce Avenue</label>
-               {/* <span className="more">...</span> */}
             </div>
          </li>
       </ul>

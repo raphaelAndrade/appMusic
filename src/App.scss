@@ -1,9 +1,9 @@
 body {
   background: black !important;
-  .container-fluid {
-    padding-right: 3px !important;
-    padding-left: 3px !important;
-  }
+  // .container-fluid {
+  //   padding-right: 3px !important;
+  //   padding-left: 3px !important;
+  // }
  .paddingLeft16px {padding-left: 16px !important}
  
 }
@@ -187,13 +187,13 @@ h2 {
 
 // Player Component
 
-.background-player {
-  width: 100%;
-  min-height: 80px;
- background-color: #0f0f15;
- color: white;
- padding-left: 10px;
-}
+// .background-player {
+//   width: 100%;
+//   min-height: 80px;
+//  background-color: #0f0f15;
+//  color: white;
+//  padding-left: 10px;
+// }
 
 // Player Component - TimeLine
 
@@ -281,4 +281,16 @@ h2 {
 }
 
 
+// slide-container
 
+.slide-container {
+  
+}
+
+
+// Footer
+
+footer {
+  min-height: 80px;
+  background-color: #0f0f15;
+}
