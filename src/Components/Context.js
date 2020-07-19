@@ -4,18 +4,19 @@ const Context = React.createContext();
 
 export class Provider extends React.Component {
   state = {
-    contacts: [],
-    name: "raphael"
+    resultQuery: {},
+    query: ""
   };
 
   componentDidMount() {
-      fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/302127").then(response => {
-        console.log(response);
+      fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=track:'apaixonadinha'").then(response => {
+        // console.log(response);
       response
         .json()
         .then(data => {
+          let dataArray = Object.values(data.data);
           this.setState({
-            contacts: data
+            result: dataArray
           });
         })
         .catch(erro => {

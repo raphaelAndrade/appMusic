@@ -1,5 +1,5 @@
 import React from 'react';
-// import SearchMusic from './SearchMusic';
+ import SearchMusic from './SearchMusic';
 import ListMusic from './ListMusic';
 
 function Playlist() {
@@ -24,12 +24,13 @@ function Playlist() {
                        </div>
                        <div className="row">
                           <div className="col-12">
-                            <form>
+                            {/* <form>
                               <h4>Search</h4>
                               <div className="form-group">
                                 <input type="text" className="form-control" aria-describedby="Search" placeholder=" Artists, Songs, or podcasts"/>
                               </div>
-                            </form>
+                            </form> */}
+                            <SearchMusic />
                           </div>
                        </div>
                        <div className="row">

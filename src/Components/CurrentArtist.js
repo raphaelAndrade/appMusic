@@ -7,10 +7,14 @@ function CurrentArtist() {
     return(
         <Consumer>
             {value => {
-                const {contacts} = value
+                const {result} = value
+
+                for(let val in result){
+                    console.log(result[val].title)
+                }
                 return (
                     <> 
-                        <div className="container-fluid">
+                        {/* <div className="container-fluid">
                             <div className="row">
                                 <div className="col-12">
                                     <div className="banner-Artist">
@@ -26,7 +30,7 @@ function CurrentArtist() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         </>
                 )
             }}

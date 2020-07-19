@@ -14,9 +14,9 @@ function Player() {
                                 <div className="row">
                                     <div className="col-12">
                                         <ul className="list-inline list-icon-player">
-                                            <li className="list-inline-item"><a href="#"><i class="fa fa-step-backward" aria-hidden="true" ></i></a></li>
-                                            <li className="list-inline-item"><a href="#"><i class="fa fa-play" aria-hidden="true"></i></a></li>
-                                            <li className="list-inline-item"><a href="#"><i class="fa fa-step-forward" aria-hidden="true"></i></a></li>
+                                            <li className="list-inline-item"><a href="#"><i className="fa fa-step-backward" aria-hidden="true" ></i></a></li>
+                                            <li className="list-inline-item"><a href="#"><i className="fa fa-play" aria-hidden="true"></i></a></li>
+                                            <li className="list-inline-item"><a href="#"><i className="fa fa-step-forward" aria-hidden="true"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
