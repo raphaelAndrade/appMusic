@@ -33,7 +33,10 @@ function RecommendedAlbums() {
                         <img src="https://edmlife.com/wp-content/uploads/2020/02/IMG_2051.jpg" alt="Picture of Profile" className="img-fluid"/>
                         <span>Alone - <label>Alan Walker</label></span>
                     </li>
-                  
+                    <li className="list-inline-item">
+                        <img src="https://edmlife.com/wp-content/uploads/2020/02/IMG_2051.jpg" alt="Picture of Profile" className="img-fluid"/>
+                        <span>Alone - <label>Alan Walker</label></span>
+                    </li>
                 </ul>
             </div>
         </>

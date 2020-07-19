@@ -2,11 +2,9 @@ import React from 'react';
 // import SearchMusic from './SearchMusic';
 import ListMusic from './ListMusic';
 
-function Playlist(props) {
-    const {height} = props;
+function Playlist() {
     return(
             <>
-                {/* <div className="background_playlist" style={{height: height}}> */}
                 <div className="background_playlist">
                    <div className="container-fluid">
                        <div className="row">

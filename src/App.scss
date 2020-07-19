@@ -185,16 +185,6 @@ h2 {
   }
 }
 
-// Player Component
-
-// .background-player {
-//   width: 100%;
-//   min-height: 80px;
-//  background-color: #0f0f15;
-//  color: white;
-//  padding-left: 10px;
-// }
-
 // Player Component - TimeLine
 
 .list-icon-player {
@@ -286,4 +276,9 @@ h2 {
 footer {
   min-height: 80px;
   background-color: #0f0f15;
+  .listMusic{
+    margin-top: 0;
+    position: relative;
+    top: 15px;
+  }
 }
