@@ -9,7 +9,8 @@ export class Provider extends React.Component {
   };
 
   componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/users").then(response => {
+      fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/302127").then(response => {
+        console.log(response);
       response
         .json()
         .then(data => {

@@ -10,8 +10,7 @@ function CurrentArtist() {
                 const {contacts} = value
                 return (
                     <> 
-                        {contacts.map(contact => <div>{contact.name}</div>)}
-                        {/* <div className="container-fluid">
+                        <div className="container-fluid">
                             <div className="row">
                                 <div className="col-12">
                                     <div className="banner-Artist">
@@ -27,7 +26,7 @@ function CurrentArtist() {
                                     </div>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                         </>
                 )
             }}
