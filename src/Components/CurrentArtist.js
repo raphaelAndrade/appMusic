@@ -8,10 +8,6 @@ function CurrentArtist() {
         <Consumer>
             {value => {
                 const {resultQuery} = value
-
-                for(let val in resultQuery){
-                    console.log(resultQuery[val].title)
-                }
                 return (
                     <> 
                         <div className="container-fluid">

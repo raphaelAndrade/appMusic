@@ -19,7 +19,6 @@ body {
   background: #20212e;
   padding-top: 25px;
   color: white;
-  position: relative;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -29,6 +28,16 @@ body {
     background: rgba($color: #000000, $alpha: 0.5);
     position: absolute;
     bottom: 0;
+  }
+  .resultList {
+    height: 400px;
+    overflow-y: auto;
+    .listMusic {
+      a {
+        color: white;
+        cursor: pointer;
+      }
+    }
   }
 }
 

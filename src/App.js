@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './App.scss';
 import './Components/Playlist';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,8 +7,9 @@ import CurrentArtist from './Components/CurrentArtist';
 import FeatureForYou from './Components/FeatureForYou';
 import RecommendedAlbums from './Components/RecommendedAlbums';
 import Player from './Components/Player';
-import RecentlyListened from './Components/RecentlyListened';
+// import RecentlyListened from './Components/RecentlyListened';
 import { Provider } from './Components/Context';
+
 
 
   function App() {
@@ -17,19 +18,19 @@ import { Provider } from './Components/Context';
         <>
           <div className="container-fluid">
             <div className="row">
-              <div className="col-2">
+              <div className="col-3">
                 <Playlist />
               </div>
-              <div className="col-10">
+              <div className="col-9">
                 <div className="container-fluid">
                   <div className="row">
-                    <div className="col-9">
+                    <div className="col-12">
                       <CurrentArtist />
                       <FeatureForYou />
                     </div>
-                    <div className="col-3">
+                    {/* <div className="col-3">
                       <RecentlyListened />
-                    </div>
+                    </div> */}
                   </div>
                   <div className="row">
                     <div className="col-12">

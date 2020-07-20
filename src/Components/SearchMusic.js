@@ -56,6 +56,7 @@ function SearchMusic() {
                         >
                           <option value="album">Album</option>
                           <option value="track">Music</option>
+                          <option value="artist">Artist</option>
                           ...
                         </select>
                       </div>

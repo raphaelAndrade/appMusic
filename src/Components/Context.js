@@ -17,6 +17,13 @@ const reducer = (state, action) => {
         ...state,
         resultQuery: resultArray
       }
+      break;
+    case "TRACKLIST" :
+      let trackListArray = Object.values(action.payload);
+      return {
+        ...state,
+        tracklist: trackListArray
+      }
   }
 
 }
@@ -24,13 +31,14 @@ const reducer = (state, action) => {
 export class Provider extends React.Component {
   state = {
     resultQuery: {},
-    query: "adfadsf",
+    query: "",
     valueSearch: "",
     dispatch: action => {
       this.setState(state => {
         return reducer(state, action);
       });
     },
+    tracklist: {}
   };
 
   render() {
