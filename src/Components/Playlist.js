@@ -24,12 +24,6 @@ function Playlist() {
                        </div>
                        <div className="row">
                           <div className="col-12">
-                            {/* <form>
-                              <h4>Search</h4>
-                              <div className="form-group">
-                                <input type="text" className="form-control" aria-describedby="Search" placeholder=" Artists, Songs, or podcasts"/>
-                              </div>
-                            </form> */}
                             <SearchMusic />
                           </div>
                        </div>

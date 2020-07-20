@@ -7,12 +7,12 @@ function CurrentArtist() {
     return(
         <Consumer>
             {value => {
-                const {result} = value
+                const {resultQuery} = value
 
                 // for(let val in result){
                 //     console.log(result[val].title)
                 // }
-                console.log(result);
+                console.log(resultQuery);
                 return (
                     <> 
                         <div className="container-fluid">

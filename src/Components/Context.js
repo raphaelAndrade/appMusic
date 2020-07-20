@@ -12,15 +12,14 @@ const reducer = (state, action) => {
       }
       break;
     case "SEARCHQUERY" :
-      console.log(`dentro da caralha ${action.payload.resultSearch}`);
+      let resultArray = Object.values(action.payload);
       return {
         ...state,
-        //resultQuery: action.payload.resultSearch
+        resultQuery: resultArray
       }
   }
 
 }
-
 
 export class Provider extends React.Component {
   state = {
@@ -33,22 +32,6 @@ export class Provider extends React.Component {
       });
     },
   };
-
-  // fetchSearch = () => {
-  //   fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${this.state.query}:'${this.state.valueSearch}'`).then(response => {
-  //     response
-  //       .json()
-  //       .then(data => {
-  //         let dataArray = Object.values(data.data);
-  //         this.setState({
-  //           result: dataArray
-  //         });
-  //       })
-  //       .catch(erro => {
-  //         console.log(`this is a error ${erro}`);
-  //       });
-  //   });
-  // }
 
   render() {
     return (

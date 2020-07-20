@@ -23,20 +23,19 @@ function SearchMusic() {
     dispatch({type: "SEARCH", payload: newSearch});
   }
 
-  const fetchSearch = (query, textSearch) => {
+  const fetchSearch = (dispatch, query, textSearch) => {
     fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${query}:'${textSearch}'`).then(response => {
       response
         .json()
         .then(data => {
-          console.log(data);
           let dataArray = Object.values(data.data);
-          setResultSearch(dataArray)
+          setResultSearch(data.data)
         })
         .catch(erro => {
           console.log(`this is a error ${erro}`);
         });
     });
-   // dispatch({type: "SEARCHQUERY", payload: resultSearch});
+    dispatch({type: "SEARCHQUERY", payload: resultSearch});
   }
 
   
@@ -74,7 +73,7 @@ function SearchMusic() {
                       />
                     </li>
                     <li>
-                      <input type="submit" value="Search" onClick={fetchSearch.bind(this, query, valueSearch)}/>
+                      <input type="submit" value="Search" onClick={fetchSearch.bind(this, dispatch, query, valueSearch)}/>
                     </li>
                   </ul>
                 </form>
