@@ -47,7 +47,7 @@ function CurrentArtist() {
                                                                 <span>{tracklist[val].title}</span>
                                                             </div>
                                                             <div className="col-6">
-                                                                <span className="timeMusic">{tracklist[val].duration}</span>
+                                                                <span className="timeMusic"><i className="fa fa-play" aria-hidden="true"></i></span>
                                                             </div>
                                                         </div>
                                                     </div>

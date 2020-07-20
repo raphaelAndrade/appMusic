@@ -20,7 +20,6 @@ const reducer = (state, action) => {
       break;
     case "TRACKLIST" :
       let trackListArray = Object.values(action.payload);
-      console.log(trackListArray);
       return {
         ...state,
         tracklist: trackListArray

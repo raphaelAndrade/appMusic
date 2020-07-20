@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React, { useState, useEffect }  from 'react';
 import { Consumer } from './Context';
 function SearchMusic() {
   const [query,setQuery] = useState("album");
@@ -36,6 +36,7 @@ function SearchMusic() {
     });
     dispatch({type: "SEARCHQUERY", payload: resultSearch});
   }
+
     return (
         <Consumer>
           {value => {
@@ -53,8 +54,9 @@ function SearchMusic() {
                           placeholder="Select a person"
                         >
                           <option value="album">Album</option>
-                          <option value="track">Music</option>
                           <option value="artist">Artist</option>
+                          <option value="track">Music</option>
+                          
                           ...
                         </select>
                       </div>

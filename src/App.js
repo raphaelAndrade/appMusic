@@ -7,7 +7,6 @@ import CurrentArtist from './Components/CurrentArtist';
 import FeatureForYou from './Components/FeatureForYou';
 import RecommendedAlbums from './Components/RecommendedAlbums';
 import Player from './Components/Player';
-// import RecentlyListened from './Components/RecentlyListened';
 import { Provider } from './Components/Context';
 
 
@@ -28,13 +27,10 @@ import { Provider } from './Components/Context';
                       <CurrentArtist />
                       {/* <FeatureForYou /> */}
                     </div>
-                    {/* <div className="col-3">
-                      <RecentlyListened />
-                    </div> */}
                   </div>
                   <div className="row">
                     <div className="col-12">
-                      {/* <RecommendedAlbums /> */}
+                      <RecommendedAlbums />
                     </div>
                   </div>
                 </div>

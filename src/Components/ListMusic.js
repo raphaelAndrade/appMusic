@@ -30,7 +30,6 @@ return(
                         <ul className="listMusic"> 
                             {
                                 Object.keys(resultQuery).map((val, index) => (
-                                    //console.log(resultQuery[val]),
                                     <li className="list-inline" key={index}>
                                         <a onClick={listTrack.bind(this, dispatch,resultQuery[val].album.tracklist,resultQuery[val].album.cover_big)} >
                                             <ul className="list-inline">
