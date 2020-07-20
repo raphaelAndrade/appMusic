@@ -17,6 +17,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -24,6 +26,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": "http://raphaelAndrade.github.io/appMusic",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -35,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
