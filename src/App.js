@@ -26,7 +26,7 @@ import { Provider } from './Components/Context';
                   <div className="row">
                     <div className="col-12">
                       <CurrentArtist />
-                      <FeatureForYou />
+                      {/* <FeatureForYou /> */}
                     </div>
                     {/* <div className="col-3">
                       <RecentlyListened />
@@ -34,7 +34,7 @@ import { Provider } from './Components/Context';
                   </div>
                   <div className="row">
                     <div className="col-12">
-                      <RecommendedAlbums />
+                      {/* <RecommendedAlbums /> */}
                     </div>
                   </div>
                 </div>

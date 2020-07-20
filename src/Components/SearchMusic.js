@@ -36,8 +36,6 @@ function SearchMusic() {
     });
     dispatch({type: "SEARCHQUERY", payload: resultSearch});
   }
-
-
     return (
         <Consumer>
           {value => {

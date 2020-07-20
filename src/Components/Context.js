@@ -20,6 +20,7 @@ const reducer = (state, action) => {
       break;
     case "TRACKLIST" :
       let trackListArray = Object.values(action.payload);
+      console.log(trackListArray);
       return {
         ...state,
         tracklist: trackListArray
@@ -38,7 +39,8 @@ export class Provider extends React.Component {
         return reducer(state, action);
       });
     },
-    tracklist: {}
+    tracklist: {},
+    selectedAlbum: ""
   };
 
   render() {

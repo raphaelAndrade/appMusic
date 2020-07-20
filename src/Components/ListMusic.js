@@ -4,13 +4,13 @@ function ListMusic() {
 
 const [ListSongsAlbum,setListSongsAlbum] = useState({});
 
-const listTrack = (dispatch,  trackLink,e)=> {
+const listTrack = (dispatch, trackLink,selectedAlbum, e)=> {
     e.preventDefault();
     fetch(`https://cors-anywhere.herokuapp.com/${trackLink}`).then(response => {
       response
         .json()
         .then(data => {
-            setListSongsAlbum(data)
+            setListSongsAlbum(data.data)
         })
         .catch(erro => {
           console.log(`this is a error ${erro}`);
@@ -22,7 +22,7 @@ const listTrack = (dispatch,  trackLink,e)=> {
 return(
     <Consumer>
         {value => {
-            const {valueSearch, resultQuery, dispatch} = value;        
+            const {valueSearch, resultQuery, dispatch} = value;      
             return(
                 <>
                    <h5>{valueSearch}</h5>
@@ -30,8 +30,9 @@ return(
                         <ul className="listMusic"> 
                             {
                                 Object.keys(resultQuery).map((val, index) => (
+                                    //console.log(resultQuery[val]),
                                     <li className="list-inline" key={index}>
-                                        <a onClick={listTrack.bind(this, dispatch,resultQuery[val].album.tracklist)} >
+                                        <a onClick={listTrack.bind(this, dispatch,resultQuery[val].album.tracklist,resultQuery[val].album.cover_big)} >
                                             <ul className="list-inline">
                                                 <li className="list-inline-item">
                                                     <div className="albumMusic">

@@ -7,7 +7,8 @@ function CurrentArtist() {
     return(
         <Consumer>
             {value => {
-                const {resultQuery} = value
+                const {resultQuery, tracklist,selectedAlbum} = value
+               
                 return (
                     <> 
                         <div className="container-fluid">
@@ -26,6 +27,32 @@ function CurrentArtist() {
                                         </li>
                                         </ul>
                                     </div>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-12">
+                                    <ul className="listMusicAlbum list-unstyled">
+                                    {
+                                        Object.keys(tracklist).map((val, index) => (
+                                            
+                                            <li className="list-inline" key={index}>
+                                                <a  >
+                                                    <ul className="list-inline">
+                                                        <li className="list-inline-item">
+                                                            <span>{tracklist[val].title}</span>
+                                                        </li>
+                                                        {/* <li className="list-inline-item">
+                                                            <div className="description">
+                                                                <span>{resultQuery[val].title}</span>
+                                                                <label>{resultQuery[val].artist.name}</label>
+                                                            </div>
+                                                        </li> */}
+                                                    </ul>
+                                                </a>
+                                            </li>
+                                        ))
+                                    }   
+                                    </ul>
                                 </div>
                             </div>
                         </div>
