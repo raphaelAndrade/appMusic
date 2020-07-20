@@ -25,7 +25,6 @@ const reducer = (state, action) => {
         tracklist: trackListArray
       }
   }
-
 }
 
 export class Provider extends React.Component {
@@ -39,8 +38,41 @@ export class Provider extends React.Component {
       });
     },
     tracklist: {},
-    selectedAlbum: ""
+    currentItemSelected: []
   };
+
+  componentDidMount(){
+
+     // Fetch Default Artist
+      fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=artist:'muse'`).then(response => {
+        response
+          .json()
+          .then(data => {
+            this.setState({
+              resultQuery: data.data
+            })
+          })
+          .catch(erro => {
+            console.log(`this is a error ${erro}`);
+          });
+      });
+
+      //Fetch Default list music
+      fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/339677/tracks`).then(response => {
+      response
+        .json()
+        .then(data => {
+          // setResultSearch(data.data)
+          this.setState({
+            tracklist: data.data
+          })
+        })
+        .catch(erro => {
+          console.log(`this is a error ${erro}`);
+        });
+    });
+
+  }
 
   render() {
     return (
