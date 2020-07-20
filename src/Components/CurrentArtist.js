@@ -9,12 +9,13 @@ function CurrentArtist() {
             {value => {
                 const {result} = value
 
-                for(let val in result){
-                    console.log(result[val].title)
-                }
+                // for(let val in result){
+                //     console.log(result[val].title)
+                // }
+                console.log(result);
                 return (
                     <> 
-                        {/* <div className="container-fluid">
+                        <div className="container-fluid">
                             <div className="row">
                                 <div className="col-12">
                                     <div className="banner-Artist">
@@ -30,7 +31,7 @@ function CurrentArtist() {
                                     </div>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                         </>
                 )
             }}
