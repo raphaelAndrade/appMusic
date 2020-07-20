@@ -4,6 +4,7 @@ import { Consumer } from './Context'
 
 function CurrentArtist() {
     // const [contact, setContact] = useState()
+
     return(
         <Consumer>
             {value => {
@@ -31,23 +32,25 @@ function CurrentArtist() {
                             </div>
                             <div className="row">
                                 <div className="col-12">
-                                    <ul className="listMusicAlbum list-unstyled">
+                                    <ul className="listMusicAlbum list-inline">
                                     {
                                         Object.keys(tracklist).map((val, index) => (
                                             
                                             <li className="list-inline" key={index}>
-                                                <a  >
-                                                    <ul className="list-inline">
-                                                        <li className="list-inline-item">
-                                                            <span>{tracklist[val].title}</span>
-                                                        </li>
-                                                        {/* <li className="list-inline-item">
-                                                            <div className="description">
-                                                                <span>{resultQuery[val].title}</span>
-                                                                <label>{resultQuery[val].artist.name}</label>
+                                                <a href={tracklist[val].preview} target="_blank">
+                                                    <div className="container-fluid noPadding">
+                                                        <div className="row">
+                                                            <div className="col-1">
+                                                                <span>{tracklist[val].track_position}</span>
                                                             </div>
-                                                        </li> */}
-                                                    </ul>
+                                                            <div className="col-5">
+                                                                <span>{tracklist[val].title}</span>
+                                                            </div>
+                                                            <div className="col-6">
+                                                                <span className="timeMusic">{tracklist[val].duration}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </a>
                                             </li>
                                         ))

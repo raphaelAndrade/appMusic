@@ -155,8 +155,16 @@ h5 {
     &:last-child{
       border-bottom: none;
     }
+    ul {
+      li {
+        border: none
+      }
+    }
   }
  a {color: rgba($color: white, $alpha: 0.7) !important}
+ .timeMusic {
+   float: right;
+ }
 }
 
 
