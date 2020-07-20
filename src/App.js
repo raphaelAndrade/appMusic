@@ -30,7 +30,7 @@ import { Provider } from './Components/Context';
                   </div>
                   <div className="row">
                     <div className="col-12">
-                      <RecommendedAlbums />
+                    <FeatureForYou />
                     </div>
                   </div>
                 </div>

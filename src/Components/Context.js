@@ -43,7 +43,7 @@ export class Provider extends React.Component {
 
   componentDidMount(){
 
-     // Fetch Default Artist
+    //  // Fetch Default Artist
       fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=artist:'muse'`).then(response => {
         response
           .json()
@@ -57,7 +57,7 @@ export class Provider extends React.Component {
           });
       });
 
-      //Fetch Default list music
+    //   //Fetch Default list music
       fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/339677/tracks`).then(response => {
       response
         .json()
