@@ -19,10 +19,11 @@ const reducer = (state, action) => {
       }
       break;
     case "TRACKLIST" :
-      let trackListArray = Object.values(action.payload);
+      let trackListArray = Object.values(action.payload[0]);
       return {
         ...state,
-        tracklist: trackListArray
+        tracklist: trackListArray,
+        currentItemSelected: action.payload[1]
       }
   }
 }
@@ -38,7 +39,7 @@ export class Provider extends React.Component {
       });
     },
     tracklist: {},
-    currentItemSelected: []
+    currentItemSelected: {}
   };
 
   componentDidMount(){

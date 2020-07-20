@@ -8,8 +8,7 @@ function CurrentArtist() {
     return(
         <Consumer>
             {value => {
-                const {resultQuery, tracklist,selectedAlbum} = value
-               
+                const {resultQuery, tracklist,currentItemSelected} = value               
                 return (
                     <> 
                         <div className="container-fluid">
@@ -19,7 +18,7 @@ function CurrentArtist() {
                                     <ul className="list-inline artist-banner-list">
                                         <li className="list-inline-item">
                                             <div className="artist-picture">
-                                            {/* <img src="" alt="Picture of Profile" className="img-fluid"/> */}
+                                             <img src={currentItemSelected} alt="Picture of Profile" className="img-fluid"/>
                                             </div>
                                         </li>
                                         <li className="list-inline-item">

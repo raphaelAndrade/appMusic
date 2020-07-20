@@ -4,7 +4,7 @@ function ListMusic() {
 
 const [ListSongsAlbum,setListSongsAlbum] = useState({});
 
-const listTrack = (dispatch, trackLink,selectedAlbum, e)=> {
+const listTrack = (dispatch, trackLink,selectedAlbum, e) => {
     e.preventDefault();
     fetch(`https://cors-anywhere.herokuapp.com/${trackLink}`).then(response => {
       response
@@ -16,7 +16,8 @@ const listTrack = (dispatch, trackLink,selectedAlbum, e)=> {
           console.log(`this is a error ${erro}`);
         });
     });
-    dispatch({type: "TRACKLIST", payload: ListSongsAlbum});
+    let currentList = [ListSongsAlbum,selectedAlbum]
+    dispatch({type: "TRACKLIST", payload: currentList});
 }
 
 return(
