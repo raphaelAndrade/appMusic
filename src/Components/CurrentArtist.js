@@ -9,10 +9,9 @@ function CurrentArtist() {
             {value => {
                 const {resultQuery} = value
 
-                // for(let val in result){
-                //     console.log(result[val].title)
-                // }
-                console.log(resultQuery);
+                for(let val in resultQuery){
+                    console.log(resultQuery[val].title)
+                }
                 return (
                     <> 
                         <div className="container-fluid">
@@ -21,7 +20,9 @@ function CurrentArtist() {
                                     <div className="banner-Artist">
                                     <ul className="list-inline artist-banner-list">
                                         <li className="list-inline-item">
-                                            <div className="artist-picture"></div>
+                                            <div className="artist-picture">
+                                            {/* <img src="" alt="Picture of Profile" className="img-fluid"/> */}
+                                            </div>
                                         </li>
                                         <li className="list-inline-item">
                                             <h1>Boyce Avenue Acoustic Covers</h1>

@@ -28,7 +28,6 @@ function SearchMusic() {
       response
         .json()
         .then(data => {
-          let dataArray = Object.values(data.data);
           setResultSearch(data.data)
         })
         .catch(erro => {
@@ -38,7 +37,6 @@ function SearchMusic() {
     dispatch({type: "SEARCHQUERY", payload: resultSearch});
   }
 
-  
 
     return (
         <Consumer>
@@ -46,15 +44,14 @@ function SearchMusic() {
             const {query, valueSearch, dispatch} = value;
             return(
               <>
-                <h4>Search {`query: ${query} value: ${valueSearch}`}</h4>
+                <h4>Search</h4>
                 <form onSubmit={onSubmit.bind(this, dispatch)}> 
-                  <ul>
+                  <ul className="list-unstyled filterList">
                     <li>
                       <div className="list-select">
                         <select
                           onChange={onChangeQuery}
-                          className="ant-input selectBox"
-                          style={{ width: 200 }}
+                          className="custom-select"
                           placeholder="Select a person"
                         >
                           <option value="album">Album</option>
@@ -73,7 +70,7 @@ function SearchMusic() {
                       />
                     </li>
                     <li>
-                      <input type="submit" value="Search" onClick={fetchSearch.bind(this, dispatch, query, valueSearch)}/>
+                      <input type="submit" className="btn btn-primary btnSearch" value="Search" onClick={fetchSearch.bind(this, dispatch, query, valueSearch)}/>
                     </li>
                   </ul>
                 </form>
