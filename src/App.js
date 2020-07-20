@@ -17,10 +17,10 @@ import { Provider } from './Components/Context';
         <>
           <div className="container-fluid">
             <div className="row">
-              <div className="col-3">
+              <div className="col-md-3 col-sm-12">
                 <Playlist />
               </div>
-              <div className="col-9">
+              <div className="col-md-9 col-sm-12">
                 <div className="container-fluid">
                   <div className="row">
                     <div className="col-12">

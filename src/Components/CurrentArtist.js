@@ -40,13 +40,11 @@ function CurrentArtist() {
                                                 <a href={tracklist[val].preview} target="_blank">
                                                     <div className="container-fluid noPadding">
                                                         <div className="row">
-                                                            <div className="col-1">
-                                                                <span>{tracklist[val].track_position}</span>
-                                                            </div>
-                                                            <div className="col-5">
+                                                            <div className="col-md-11 col-sm-10">
+                                                                <span>{tracklist[val].track_position} - </span>
                                                                 <span>{tracklist[val].title}</span>
                                                             </div>
-                                                            <div className="col-6">
+                                                            <div className="col-md-1 col-sm-1">
                                                                 <span className="timeMusic"><i className="fa fa-play" aria-hidden="true"></i></span>
                                                             </div>
                                                         </div>
