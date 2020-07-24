@@ -12,17 +12,17 @@ const reducer = (state, action) => {
       }
       break;
     case "SEARCHQUERY" :
-      let resultArray = Object.values(action.payload);
+      //let resultArray = Object.values(action.payload);
       return {
         ...state,
-        resultQuery: resultArray
+        resultQuery: action.payload
       }
       break;
     case "TRACKLIST" :
-      let trackListArray = Object.values(action.payload[0]);
+      //let trackListArray = Object.values(action.payload[0]);
       return {
         ...state,
-        tracklist: trackListArray,
+        tracklist: action.payload[0],
         currentItemSelected: action.payload[1] //TODO: Get the value from title, number of songs and etc.
       }
       default:
