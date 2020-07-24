@@ -23,8 +23,10 @@ const reducer = (state, action) => {
       return {
         ...state,
         tracklist: trackListArray,
-        currentItemSelected: action.payload[1]
+        currentItemSelected: action.payload[1] //TODO: Get the value from title, number of songs and etc.
       }
+      default:
+        return state
   }
 }
 
@@ -42,9 +44,9 @@ export class Provider extends React.Component {
     currentItemSelected: {}
   };
 
-  componentDidMount(){
+  componentDidMount(){ //TODO: Call the fetch function just once and past the query as a parameters
 
-    //  // Fetch Default Artist
+     // Fetch Default Artist
       fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=artist:'muse'`).then(response => {
         response
           .json()
@@ -58,12 +60,11 @@ export class Provider extends React.Component {
           });
       });
 
-    //   //Fetch Default list music
+     //Fetch Default list music
       fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/339677/tracks`).then(response => {
       response
         .json()
         .then(data => {
-          // setResultSearch(data.data)
           this.setState({
             tracklist: data.data
           })
@@ -72,9 +73,7 @@ export class Provider extends React.Component {
           console.log(`this is a error ${erro}`);
         });
     });
-
   }
-
   render() {
     return (
       <Context.Provider value={this.state}>

@@ -4,7 +4,7 @@ function ListMusic() {
 
 const [ListSongsAlbum,setListSongsAlbum] = useState({});
 
-const listTrack = (dispatch, trackLink,selectedAlbum, e) => {
+const listTrack = (dispatch, trackLink,selectedPicture, selectedTitle, e) => {
     e.preventDefault();
     fetch(`https://cors-anywhere.herokuapp.com/${trackLink}`).then(response => {
       response
@@ -16,7 +16,7 @@ const listTrack = (dispatch, trackLink,selectedAlbum, e) => {
           console.log(`this is a error ${erro}`);
         });
     });
-    let currentList = [ListSongsAlbum,selectedAlbum]
+    let currentList = [ListSongsAlbum,selectedPicture,selectedTitle]
     dispatch({type: "TRACKLIST", payload: currentList});
 }
 
@@ -32,7 +32,7 @@ return(
                             {
                                 Object.keys(resultQuery).map((val, index) => (
                                     <li className="list-inline" key={index}>
-                                        <a onClick={listTrack.bind(this, dispatch,resultQuery[val].album.tracklist,resultQuery[val].album.cover_big)} >
+                                        <a onClick={listTrack.bind(this, dispatch,resultQuery[val].album.tracklist,resultQuery[val].album.cover_big,resultQuery[val].title)} >
                                             <ul className="list-inline">
                                                 <li className="list-inline-item">
                                                     <div className="albumMusic">

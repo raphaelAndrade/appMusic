@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/appMusic/static/css/main.da26bd18.chunk.css",
-    "main.js": "/appMusic/static/js/main.aca54a77.chunk.js",
-    "main.js.map": "/appMusic/static/js/main.aca54a77.chunk.js.map",
+    "main.css": "/appMusic/static/css/main.3672c6a6.chunk.css",
+    "main.js": "/appMusic/static/js/main.4a1a75e8.chunk.js",
+    "main.js.map": "/appMusic/static/js/main.4a1a75e8.chunk.js.map",
     "runtime-main.js": "/appMusic/static/js/runtime-main.7a0db319.js",
     "runtime-main.js.map": "/appMusic/static/js/runtime-main.7a0db319.js.map",
     "static/css/2.af3c1da9.chunk.css": "/appMusic/static/css/2.af3c1da9.chunk.css",
     "static/js/2.23211b4e.chunk.js": "/appMusic/static/js/2.23211b4e.chunk.js",
     "static/js/2.23211b4e.chunk.js.map": "/appMusic/static/js/2.23211b4e.chunk.js.map",
     "index.html": "/appMusic/index.html",
-    "precache-manifest.b9512a13c1c893247e5495abad9006fc.js": "/appMusic/precache-manifest.b9512a13c1c893247e5495abad9006fc.js",
+    "precache-manifest.014db48bb74cb7dde83341df47c63a92.js": "/appMusic/precache-manifest.014db48bb74cb7dde83341df47c63a92.js",
     "service-worker.js": "/appMusic/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/appMusic/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.da26bd18.chunk.css.map": "/appMusic/static/css/main.da26bd18.chunk.css.map",
+    "static/css/main.3672c6a6.chunk.css.map": "/appMusic/static/css/main.3672c6a6.chunk.css.map",
     "static/js/2.23211b4e.chunk.js.LICENSE.txt": "/appMusic/static/js/2.23211b4e.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/appMusic/static/media/ozuna.518a2af5.jpg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.7a0db319.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.23211b4e.chunk.js",
-    "static/css/main.da26bd18.chunk.css",
-    "static/js/main.aca54a77.chunk.js"
+    "static/css/main.3672c6a6.chunk.css",
+    "static/js/main.4a1a75e8.chunk.js"
   ]
 }

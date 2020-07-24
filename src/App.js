@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Playlist from './Components/Playlist';
 import CurrentArtist from './Components/CurrentArtist';
 import FeatureForYou from './Components/FeatureForYou';
-import RecommendedAlbums from './Components/RecommendedAlbums';
 import Player from './Components/Player';
 import { Provider } from './Components/Context';
 
@@ -25,7 +24,6 @@ import { Provider } from './Components/Context';
                   <div className="row">
                     <div className="col-12">
                       <CurrentArtist />
-                      {/* <FeatureForYou /> */}
                     </div>
                   </div>
                   <div className="row">

@@ -1,5 +1,5 @@
 import React from 'react';
- import SearchMusic from './SearchMusic';
+import SearchMusic from './SearchMusic';
 import ListMusic from './ListMusic';
 
 function Playlist() {
@@ -38,7 +38,6 @@ function Playlist() {
         )
 }
 export default Playlist;
-
 
 
 

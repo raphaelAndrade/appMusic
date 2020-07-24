@@ -1,14 +1,11 @@
 import React from 'react';
 import { Consumer } from './Context'
-// import React, { useState } from 'react';
 
 function CurrentArtist() {
-    // const [contact, setContact] = useState()
-
     return(
         <Consumer>
             {value => {
-                const {resultQuery, tracklist,currentItemSelected} = value               
+                const {tracklist,currentItemSelected} = value               
                 return (
                     <> 
                         <div className="container-fluid">
@@ -28,13 +25,12 @@ function CurrentArtist() {
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> {/* TODO: Create a default status when run the app for the first time */}
                             <div className="row">
                                 <div className="col-12">
                                     <ul className="listMusicAlbum list-inline">
                                     {
                                         Object.keys(tracklist).map((val, index) => (
-                                            
                                             <li className="list-inline" key={index}>
                                                 <a href={tracklist[val].preview} target="_blank">
                                                     <div className="container-fluid noPadding">

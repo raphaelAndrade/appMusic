@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d308d2d72585a9d967177d49fd86bcf3",
+    "revision": "a3def8463b790f8ab138dd693aa78557",
     "url": "/appMusic/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/appMusic/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "a0270fc8c4f98cdf9c3b",
-    "url": "/appMusic/static/css/main.da26bd18.chunk.css"
+    "revision": "794e1411b0e43a206234",
+    "url": "/appMusic/static/css/main.3672c6a6.chunk.css"
   },
   {
     "revision": "3df6eecdddc9a47ba220",
@@ -20,16 +20,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/appMusic/static/js/2.23211b4e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a0270fc8c4f98cdf9c3b",
-    "url": "/appMusic/static/js/main.aca54a77.chunk.js"
+    "revision": "794e1411b0e43a206234",
+    "url": "/appMusic/static/js/main.4a1a75e8.chunk.js"
   },
   {
     "revision": "c087bff9d15040b3f942",
     "url": "/appMusic/static/js/runtime-main.7a0db319.js"
-  },
-  {
-    "revision": "aeb3b04f13577554eb5c513e909eca05",
-    "url": "/appMusic/static/media/artist-picture.aeb3b04f.jpg"
   },
   {
     "revision": "03a239a6cebb56f0799d0ef87c8e04c2",

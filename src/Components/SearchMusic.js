@@ -17,7 +17,7 @@ function SearchMusic() {
   const onSubmit = (dispatch, e) => {
     e.preventDefault();
     const newSearch = {
-      query,
+      query, 
       textSearch
     }
     dispatch({type: "SEARCH", payload: newSearch});
