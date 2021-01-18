@@ -20,7 +20,7 @@ function CurrentArtist() {
                                         </li>
                                         <li className="list-inline-item">
                                             <h1>Boyce Avenue Acoustic Covers</h1>
-                                            <span>A thousand Years</span>
+                                            <span>A thousand Vancouver</span>
                                         </li>
                                         </ul>
                                     </div>

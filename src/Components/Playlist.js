@@ -16,7 +16,7 @@ function Playlist() {
                                     </div>
                                 </li>
                                 <li className="list-inline-item">
-                                    <span className="nameUser">Raphael</span>
+                                    <span className="nameUser">Raphael Santos</span>
                                     <span className="badgeAccount">Premium</span>
                                 </li>
                              </ul> 
