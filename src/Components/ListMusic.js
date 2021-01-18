@@ -13,7 +13,7 @@ const listTrack = (dispatch, trackLink,selectedPicture, selectedTitle, e) => {
             setListSongsAlbum(data.data)
         })
         .catch(erro => {
-          console.log(`this is a error ${erro}`);
+          console.log(`We have a problem ${erro}`);
         });
     });
     let currentList = [ListSongsAlbum,selectedPicture,selectedTitle]
