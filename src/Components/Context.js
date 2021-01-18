@@ -56,7 +56,7 @@ export class Provider extends React.Component {
             })
           })
           .catch(erro => {
-            console.log(`this is a error ${erro}`);
+            console.log(`I found a error ${erro}`);
           });
       });
 
