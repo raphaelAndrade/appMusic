@@ -37,7 +37,7 @@ function Player() {
                             
                         </div>
                         <div className="col-2">
-                            <span className="previous">Up next <label>Rise</label></span>
+                            <span className="previous">Next <label>Rise</label></span>
                         </div>
                     </div>   
                 </div>

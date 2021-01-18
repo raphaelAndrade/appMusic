@@ -40,7 +40,7 @@ return(
                                                     </div>
                                                 </li>
                                                 <li className="list-inline-item">
-                                                    <div className="description">
+                                                    <div className="description player">
                                                         <span>{resultQuery[val].title}</span>
                                                         <label>{resultQuery[val].artist.name}</label>
                                                     </div>
