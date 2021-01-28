@@ -16,7 +16,7 @@ import { Provider } from './Components/Context';
         <>
           <div className="container-fluid">
             <div className="row">
-              <div className="col-md-3 col-sm-12">
+              <div className="col-md-3 col-sm-11">
                 <Playlist />
               </div>
               <div className="col-md-9 col-sm-12">
